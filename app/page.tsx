@@ -32,7 +32,7 @@ const fetchProjects = async (): Promise<{
   }
 };
 
-export default async function HomePage() {
+export default async function ProjectsPage() {
   const { projects, error } = await fetchProjects();
 
   return (

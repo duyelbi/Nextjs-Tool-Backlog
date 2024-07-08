@@ -1,6 +1,11 @@
 export interface IUser {
-  id: string;
+  id: number;
+  userId: string | null;
   name: string;
-  email: string;
-  role: string;
+  roleType: number;
+  lang: string;
+  mailAddress: string;
+  nulabAccount: INulabAccount;
+  keyword: string;
+  lastLoginTime: string;
 }

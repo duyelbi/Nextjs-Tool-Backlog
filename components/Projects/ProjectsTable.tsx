@@ -3,6 +3,8 @@
 import React from "react";
 
 import { Tooltip } from "@nextui-org/tooltip";
+import { Button } from "@nextui-org/button";
+import { Link } from "@nextui-org/link";
 import {
   Table,
   TableHeader,
@@ -39,9 +41,14 @@ export default function ProjectsTable({ projects, error }: IProjectsTable) {
         return (
           <div className="relative flex items-center gap-2">
             <Tooltip content="Details">
-              <span className="text-lg text-default-400 cursor-pointer active:opacity-50">
+              <Button
+                isIconOnly
+                href={`/${project.id}`}
+                as={Link}
+                className="text-lg text-default-400 cursor-pointer active:opacity-50"
+              >
                 <EyeIcon />
-              </span>
+              </Button>
             </Tooltip>
             <Tooltip content="Edit user">
               <span className="text-lg text-default-400 cursor-pointer active:opacity-50">

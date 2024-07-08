@@ -51,7 +51,7 @@ export default function ProjectsForm() {
 
       <div className="flex justify-end max-w-2xl">
         <Button type="submit" size="sm" color="secondary" variant="ghost">
-          Create Cookie
+          Set Cookie
         </Button>
       </div>
     </form>
